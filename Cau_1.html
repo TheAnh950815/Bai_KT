@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let piont = [8, 9, 6, 5, 1, 8, 9]
+    let max = piont[0]
+
+    function findMAx() {
+        for (let i = 0; i < piont.length; i++) {
+            if (piont[i] > max) {
+                max = piont[i]
+            }
+        }
+        document.write(max)
+    };
+    findMAx(piont);
+</script>

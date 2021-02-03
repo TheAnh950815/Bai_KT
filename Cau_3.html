@@ -5,27 +5,28 @@
     <title>Title</title>
 </head>
 <body>
+    <script>
+        let num = prompt("kiem tra so fibnacci")
+
+        function isFibonacci(num) {
+            let a;
+            let b = 1;
+            let c = 0;
+            let fib = [];
+            let check = false
+            for (let i = 0; c < num ; i++) {
+                a = b;
+                b = c;
+                c = a + b;
+                fib.push(c)
+            }
+            if (fib[fib.length - 1] == num) {
+                check = true;
+            } return check;
+        }
+        alert(isFibonacci(num));
+
+    </script>
 
 </body>
 </html>
-<script>
-    let check= true
-    function isFibonacci(number){
-        if (number<2){
-            check =false
-        }else {
-            for (let i= 2; i<number-1;i++){
-                if (number%i==0){
-                    check=false;
-                    break;
-                }
-            }
-        }
-    if (check){
-        document.write(number + " là số nguyên tố")
-    }else {
-        document.write(number+ " không phải số nguyên tố")
-    }
-    }
-    isFibonacci(7)
-</script>
